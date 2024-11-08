@@ -22,6 +22,10 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         Movement();
+        if (stats.hp <= 0)
+        {
+            Death();
+        }
     }
 
     private void Movement()
@@ -45,5 +49,11 @@ public class PlayerController : MonoBehaviour
         gameObject.transform.localScale = currentScale;
 
         flip = !flip;
+    }
+
+    private void Death()
+    {
+        anim.SetBool("IsDead", true);
+        Destroy(this.gameObject, 0.5f);
     }
 }

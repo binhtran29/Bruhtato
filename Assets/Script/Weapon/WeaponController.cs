@@ -8,7 +8,7 @@ public class WeaponController : MonoBehaviour
     protected float angle;
     
     [SerializeField] private PlayerController player;
-    [SerializeField] private Animator anim;
+    public Animator anim;
     
     private Vector3 movement;
 
@@ -20,6 +20,8 @@ public class WeaponController : MonoBehaviour
     private void Update()
     {
         Movement();
+        if(player.stats.hp <= 0)
+            Despawn();
     }
 
     private void Movement()
@@ -39,5 +41,10 @@ public class WeaponController : MonoBehaviour
             angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg * rotationSpeed;
             transform.rotation = Quaternion.Euler(0, 0, angle);
         }
+    }
+
+    private void Despawn()
+    { 
+        Destroy(this.gameObject);
     }
 }

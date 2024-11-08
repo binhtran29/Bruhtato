@@ -16,12 +16,6 @@ public class Stats : MonoBehaviour
 
     private void Update()
     {
-        Death();
-    }
-
-    void Death()
-    {
-        if(hp <= 0)
-            Destroy(this.gameObject);
+        
     }
 }

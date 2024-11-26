@@ -22,6 +22,7 @@ public class WeaponController : MonoBehaviour
         Movement();
         if(player.stats.hp <= 0)
             Despawn();
+        AttackAnimation();
     }
 
     private void Movement()
@@ -40,6 +41,18 @@ public class WeaponController : MonoBehaviour
         {
             angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg * rotationSpeed;
             transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+    }
+
+    private void AttackAnimation()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            anim.SetBool("Attack", true);
+        }
+        else
+        {
+            anim.SetBool("Attack", false);
         }
     }
 

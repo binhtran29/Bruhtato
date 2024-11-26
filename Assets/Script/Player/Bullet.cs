@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
             countdown -= Time.deltaTime;
         else
             countdown = 0;
-        if (Input.GetButtonDown("Fire1") && countdown == 0 && playerStats.mp >= stats.mpConsume)
+        if (Input.GetButtonUp("Fire1") && countdown == 0 && playerStats.mp >= stats.mpConsume)
         {
             var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
             bullet.GetComponent<Rigidbody2D>().velocity = spawnPoint.right * speed;

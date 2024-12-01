@@ -8,6 +8,7 @@ public class WeaponStats : MonoBehaviour
 {
     public int maxHp, maxMp, atk, mpConsume;
     public float speed, atkSpeed, critRate, critDmg, CD;
+    public bool rechargable, multishoot;
 
     [SerializeField] private Stats player;
     private void Start()

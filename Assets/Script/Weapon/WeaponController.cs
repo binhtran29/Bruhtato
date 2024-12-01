@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using ColorUtility = UnityEngine.ColorUtility;
 
 public class WeaponController : MonoBehaviour
 {
     public float rotationSpeed;
-    protected float angle;
+    private float angle, countdown;
     
     [SerializeField] private PlayerController player;
     public Animator anim;
@@ -19,9 +21,14 @@ public class WeaponController : MonoBehaviour
 
     private void Update()
     {
+        if(countdown > 0) countdown -= Time.deltaTime;
+        else countdown = 0;
+        
         Movement();
+        
         if(player.stats.hp <= 0)
             Despawn();
+        
         AttackAnimation();
     }
 
@@ -34,8 +41,8 @@ public class WeaponController : MonoBehaviour
         move.Normalize();
 
         transform.position = player.transform.position;
-        if(movement.x > 0) transform.localScale = new Vector3(1, -1, 1);
-        else if(movement.x < 0) transform.localScale = new Vector3(1, 1, 1);
+        if(movement.x > 0) transform.localScale = new Vector3(1, 1, 1);
+        else if(movement.x < 0) transform.localScale = new Vector3(1, -1, 1);
 
         if (move != Vector2.zero)
         {
@@ -48,12 +55,16 @@ public class WeaponController : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            anim.SetBool("Attack", true);
+            if(countdown == 0) anim.SetBool("Attack", true);
         }
-        else
-        {
+        if(this.GetComponent<WeaponStats>().multishoot && !Input.GetButton("Fire1"))
             anim.SetBool("Attack", false);
-        }
+    }
+
+    private void AttackAnimOff()
+    {
+        anim.SetBool("Attack", false);
+        countdown = 1 / player.GetComponent<Stats>().atkSpeed;
     }
 
     private void Despawn()

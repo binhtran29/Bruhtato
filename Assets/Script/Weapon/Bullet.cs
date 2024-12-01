@@ -8,7 +8,6 @@ public class Bullet : MonoBehaviour
     public Transform spawnPoint;
     public GameObject bulletPrefab;
     public float speed;
-    [SerializeField] private WeaponStats stats;
     [SerializeField] private Stats playerStats;
     
     private float countdown;
@@ -16,7 +15,6 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
-        stats = GameObject.FindGameObjectWithTag("Weapon").GetComponent<WeaponStats>();
         countdown = 1 / playerStats.atkSpeed;
     }
 
@@ -26,12 +24,18 @@ public class Bullet : MonoBehaviour
             countdown -= Time.deltaTime;
         else
             countdown = 0;
-        if (Input.GetButtonUp("Fire1") && countdown == 0 && playerStats.mp >= stats.mpConsume)
+        if (countdown == 0 && playerStats.mp >= this.GetComponent<WeaponStats>().mpConsume)
         {
-            var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
-            bullet.GetComponent<Rigidbody2D>().velocity = spawnPoint.right * speed;
-            playerStats.mp -= stats.mpConsume;
-            countdown = 1 / playerStats.atkSpeed;
+            if(this.GetComponent<WeaponStats>().rechargable && Input.GetButtonUp("Fire1")) BulletSpawn();
+            else if(!this.GetComponent<WeaponStats>().rechargable && Input.GetButton("Fire1")) BulletSpawn();
         }
+    }
+
+    private void BulletSpawn()
+    {
+        var bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
+        bullet.GetComponent<Rigidbody2D>().velocity = spawnPoint.right * speed;
+        playerStats.mp -= this.GetComponent<WeaponStats>().mpConsume;
+        countdown = 1 / playerStats.atkSpeed;
     }
 }

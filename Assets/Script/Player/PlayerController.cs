@@ -38,8 +38,8 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(movement.x));
         
         if(movement.x != 0) rb.AddForce(new Vector2(movement.x * stats.speed, 0));
-        if(movement.x > 0 && flip) Flip();
-        if(movement.x < 0 && !flip) Flip();
+        if(movement.x > 0 && !flip) Flip();
+        if(movement.x < 0 && flip) Flip();
     }
 
     private void Flip()

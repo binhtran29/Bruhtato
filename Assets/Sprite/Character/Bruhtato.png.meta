@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d0b44a6e1f8c4d44d865430c45dfe153
+guid: 45d40bd12863e644d9bc28bf41658fda
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,127 +97,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword_0
+      name: Bruhtato_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 5
+        x: 0
+        y: 0
         width: 32
-        height: 54
+        height: 32
       alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
+      pivot: {x: 0.5, y: 0.40625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c99d8c87cacca4aa6360048b938feb
-      internalID: 912898103
+      spriteID: db3d4ffe1437b1a4f92f1e557d30f2e2
+      internalID: -2081380116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_1
+      name: Bruhtato_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 5
+        x: 32
+        y: 0
         width: 32
-        height: 54
+        height: 32
       alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
+      pivot: {x: 0.5, y: 0.40625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80ed576b533e5a74ea2af22d798c622b
-      internalID: 806782396
+      spriteID: 3aa347424ca2f9c4da716d044a60768e
+      internalID: 244560934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_2
+      name: Bruhtato_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 5
-        width: 30
-        height: 54
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 9
-      pivot: {x: -0.2, y: 0.5185185}
+      pivot: {x: 0.5, y: 0.40625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fc2f3cd85ddb304485e5620595f7ed2
-      internalID: -894211198
+      spriteID: dae8941d2281cca48bcbbaa6d761419e
+      internalID: -1167522922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_3
+      name: Bruhtato_3
       rect:
         serializedVersion: 2
-        x: 212
-        y: 5
+        x: 96
+        y: 0
         width: 32
-        height: 54
+        height: 32
       alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
+      pivot: {x: 0.5, y: 0.40625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 855d59105a889164c873ab774ed5fc91
-      internalID: 48569301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_4
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 5
-        width: 32
-        height: 54
-      alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa696b332bf4b5841af34064ea8541d3
-      internalID: -63412190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_5
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 5
-        width: 32
-        height: 54
-      alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c745a5e81402954f8ca4b65d550645b
-      internalID: -1636453492
+      spriteID: 8dc16cbe5e8965347aed01e0e0347ddf
+      internalID: 933243592
       vertices: []
       indices: 
       edges: []
@@ -233,12 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sword_0: 912898103
-      Sword_1: 806782396
-      Sword_2: -894211198
-      Sword_3: 48569301
-      Sword_4: -63412190
-      Sword_5: -1636453492
+      Bruhtato_0: -2081380116
+      Bruhtato_1: 244560934
+      Bruhtato_2: -1167522922
+      Bruhtato_3: 933243592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

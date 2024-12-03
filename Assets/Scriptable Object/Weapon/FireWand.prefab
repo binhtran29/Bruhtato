@@ -126,7 +126,7 @@ MonoBehaviour:
   critDmg: 0
   CD: 0
   rechargable: 0
-  multishoot: 0
+  multishoot: 1
   player: {fileID: 0}
 --- !u!114 &1336531333926452692
 MonoBehaviour:
@@ -190,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 6755472123727986438}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.35, z: 0}
+  m_LocalPosition: {x: 0.4, y: 0.475, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

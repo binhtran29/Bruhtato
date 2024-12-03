@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d0b44a6e1f8c4d44d865430c45dfe153
+guid: 49199908ca4307d438130a881ed7c4ff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,127 +97,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword_0
+      name: Karotto_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 5
+        x: 0
+        y: 0
         width: 32
-        height: 54
+        height: 32
       alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
+      pivot: {x: 0.5, y: 0.3125}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c99d8c87cacca4aa6360048b938feb
-      internalID: 912898103
+      spriteID: 50a6cc688aad0df4c96da6037dbcbcce
+      internalID: 1946476514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_1
+      name: Karotto_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 5
+        x: 32
+        y: 0
         width: 32
-        height: 54
+        height: 32
       alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
+      pivot: {x: 0.5, y: 0.3125}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80ed576b533e5a74ea2af22d798c622b
-      internalID: 806782396
+      spriteID: 3aaf87df14ff4dd4ab49379347e11d78
+      internalID: -427600496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_2
+      name: Karotto_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 5
-        width: 30
-        height: 54
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 9
-      pivot: {x: -0.2, y: 0.5185185}
+      pivot: {x: 0.5, y: 0.3125}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fc2f3cd85ddb304485e5620595f7ed2
-      internalID: -894211198
+      spriteID: d0930ba00fbb4fa41a2276fd92f29fa0
+      internalID: 1581035773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_3
+      name: Karotto_3
       rect:
         serializedVersion: 2
-        x: 212
-        y: 5
+        x: 96
+        y: 0
         width: 32
-        height: 54
+        height: 32
       alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
+      pivot: {x: 0.5, y: 0.3125}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 855d59105a889164c873ab774ed5fc91
-      internalID: 48569301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_4
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 5
-        width: 32
-        height: 54
-      alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa696b332bf4b5841af34064ea8541d3
-      internalID: -63412190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_5
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 5
-        width: 32
-        height: 54
-      alignment: 9
-      pivot: {x: -0.1875, y: 0.5185185}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c745a5e81402954f8ca4b65d550645b
-      internalID: -1636453492
+      spriteID: 88152ced925281a4387d8bd5bd49f29e
+      internalID: -884628051
       vertices: []
       indices: 
       edges: []
@@ -233,12 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sword_0: 912898103
-      Sword_1: 806782396
-      Sword_2: -894211198
-      Sword_3: 48569301
-      Sword_4: -63412190
-      Sword_5: -1636453492
+      Karotto_0: 1946476514
+      Karotto_1: -427600496
+      Karotto_2: 1581035773
+      Karotto_3: -884628051
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
